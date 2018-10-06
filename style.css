@@ -1,0 +1,23 @@
+/* Jeffrey Phelps 2018 RGB Color Guesser guessing game */
+
+body {
+    background-color: #232323;
+    text-align: center;
+}
+
+.square {
+    width: 30%;
+    background: purple;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+h1 {
+    color: wheat;
+}
