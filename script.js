@@ -71,7 +71,7 @@ resetBtn.addEventListener("click", function(){
      resetBtn.textContent = "New Colors";
      h1.style.backgroundColor = "steelblue";
      messageDisplay.style.color = "inherit";
-     messageDisplay.textContent = "Let's Play!"
+     messageDisplay.textContent = "Pick a Color!"
      for(let i = 0; i < squares.length; i++){
         squares[i].style.backgroundColor = colors[i];
     };
