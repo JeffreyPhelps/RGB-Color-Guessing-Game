@@ -1,8 +1,12 @@
 /* Jeffrey Phelps 2018 RGB Color Guesser guessing game */
 
+
+@import url('https://fonts.googleapis.com/css?family=Mada');
+
 body {
     background-color: #232323;
     text-align: center;
+    font-family: "Mada";
 }
 
 .square {
@@ -11,6 +15,10 @@ body {
     padding-bottom: 30%;
     float: left;
     margin: 1.66%;
+    border-radius: 15px;
+    transition: background 0.75s;
+    -webkit-transition: background 0.6s;
+    -moz-transition: background 0.6s;
 }
 
 .container {
@@ -19,12 +27,16 @@ body {
 }
 
 h1 {
+    text-align: center;
     color: wheat;
-    padding: 20px;
+    background-color: steelblue;
+    margin: 0;
+    padding: 5px;
+    text-transform: uppercase;
 }
 
-span {
-    color: wheat;
+#colorDisplay {
+    font-size: 200%;
 }
 
 #stripe {
@@ -34,17 +46,33 @@ span {
     margin-bottom: 30px;
 }
 
-.btn {
-    border: 1px solid #232323;
-    border-radius: 7%;
-    margin: 3px;
-}
-
 .selected {
-    background-color: blue;
+    background-color: steelblue;
+    color: white;
 }
 
 #message {
-    color: #232323;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: inline-block;
+    width: 20%;
 }
 
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: bold;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+}
+
+button:hover {
+    color: white;
+    background-color: steelblue;
+    transition: all 0.25s;
+    -webkit-transition: background 0.25s;
+    -moz-transition: background 0.25s;
+}

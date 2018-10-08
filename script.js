@@ -23,12 +23,14 @@ for(let i = 0; i < colors.length; i++) {
         let clickedColor = this.style.backgroundColor;
         if(clickedColor === pickedColor) {
             messageDisplay.textContent = "Correct!";
+            messageDisplay.style.color = clickedColor;
             resetBtn.textContent = "Play Again?";
             changeColors(clickedColor);
             h1.style.backgroundColor = clickedColor;
         } else {
             this.style.backgroundColor = "#232323";
             messageDisplay.textContent = "Try Again";
+            messageDisplay.style.color = "red";
         };
     });
 };
@@ -67,7 +69,9 @@ resetBtn.addEventListener("click", function(){
      pickedColor = pickColor();
      colorDisplay.textContent = pickedColor;
      resetBtn.textContent = "New Colors";
-     h1.style.backgroundColor = "#232323";
+     h1.style.backgroundColor = "steelblue";
+     messageDisplay.style.color = "inherit";
+     messageDisplay.textContent = "Let's Play!"
      for(let i = 0; i < squares.length; i++){
         squares[i].style.backgroundColor = colors[i];
     };
